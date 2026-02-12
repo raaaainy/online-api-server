@@ -23,13 +23,13 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'name' => $this->faker->sentence(),
-            'email' => $this->faker->sentence(),
-            'email_verified_at' => $this->faker->sentence(),
-            'password' => $this->faker->sentence(),
-            'remember_token' => $this->faker->sentence(),
-        ];
+        // return [
+        //     'name' => $this->faker->sentence(),
+        //     'email' => $this->faker->sentence(),
+        //     'email_verified_at' => $this->faker->sentence(),
+        //     'password' => $this->faker->sentence(),
+        //     'remember_token' => $this->faker->sentence(),
+        // ];
     }
 
     /**
@@ -37,8 +37,8 @@ class UserFactory extends Factory
      */
     public function unverified(): static
     {
-        return $this->state(fn (array $attributes) => [
-            'email_verified_at' => null,
-        ]);
+        // return $this->state(fn (array $attributes) => [
+        //     'email_verified_at' => null,
+        // ]);
     }
 }
