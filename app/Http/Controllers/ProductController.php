@@ -56,13 +56,12 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
 
-        $placeholder = "https://placehold.co/600x400";
-
         $request->validate([
             'name' => 'required',
             'description' => 'required',
             'price' => 'required',
             'rating' => 'required',
+            'image' => 'required',
         ]);
 
         $product->update([
@@ -70,7 +69,7 @@ class ProductController extends Controller
             'description' => $request->description,
             'price' => $request->price,
             'rating' => $request->rating,
-            'image' => $placeholder,
+            'image' => $request->image,
         ]);
         
         return $product;
