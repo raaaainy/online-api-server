@@ -61,7 +61,6 @@ class ProductController extends Controller
             'description' => 'required',
             'price' => 'required',
             'rating' => 'required',
-            'image' => 'required',
         ]);
 
         $product->update([
