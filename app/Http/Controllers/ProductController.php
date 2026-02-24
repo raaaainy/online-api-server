@@ -72,7 +72,7 @@ class ProductController extends Controller
             'image' => $request->image,
         ]);
         
-        return $request->image;
+        return $product;
     }
 
     /**
