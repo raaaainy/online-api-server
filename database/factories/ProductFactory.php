@@ -17,7 +17,7 @@ class ProductFactory extends Factory
      */
     public function definition(): array
     {
-        $placeholder = "https://placehold.co/600x400";
+        $placeholder = "https://placehold.net/800x600.png";
         return [
             'name' => $this->faker->words(2, true),
             'description' => $this->faker->sentence(),
