@@ -56,12 +56,12 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
 
-        $request->validate([
-            'name' => 'required',
-            'description' => 'required',
-            'price' => 'required',
-            'rating' => 'required',
-        ]);
+        // $request->validate([
+        //     'name' => 'required',
+        //     'description' => 'required',
+        //     'price' => 'required',
+        //     'rating' => 'required',
+        // ]);
 
         $product->update([
             'name'  => $request->name,
