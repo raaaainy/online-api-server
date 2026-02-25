@@ -55,7 +55,6 @@ class ProductController extends Controller
     public function update(Request $request, string $id)
     {
         $product = Product::find($id);
-        $placeholder = "https://placehold.net/400x400.png"
 
         // $request->validate([
         //     'name' => 'required',
